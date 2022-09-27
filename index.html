@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choropleth Map</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="loading-sheet">Loading... :)</div>
+        <h1 id="title">USA Choropleth Map</h1>
+        <div id="description">
+            <div class="desc-text">-     Percentaje of people with a bachellor degree or higher     +</div>
+            <div class="yellow"></div>
+        </div>
+        <div class="main-container">
+            <h2 id="tooltip"></h2>
+            <svg id="canvas"></svg>
+            <svg id="legend">
+                <g><rect fill="green"></rect></g>
+                <g><rect fill="yellow"></rect></g>
+                <g><rect fill="blue"></rect></g>
+                <g><rect fill="red"></rect></g>
+            </svg>
+        </div>
+    </body>
+    <!-- d3 Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.js"></script>
+    <!-- topojson Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Javascript -->
+    <script src="app.js"></script>
+    <!-- fCC tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

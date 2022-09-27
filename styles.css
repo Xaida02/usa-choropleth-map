@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+
+}
+
+.loading-sheet {
+    background-color: rgb(35, 35, 48);
+    visibility: visible;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-weight:bold;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7, 0.7);
+    /* border: 1px solid rgba(35, 48, 45, 0.501) */
+    margin-top: -100px;
+    flex-direction: column;
+}
+
+#canvas {
+    width: 960px;
+    height: 600px;
+    background-color: rgba(250, 235, 215, 0);
+
+}
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow {
+    width: 300px;
+    height: 20px;
+    background: linear-gradient(0.25turn, rgb(84, 84, 2), rgb(118, 118, 2), rgb(209, 209, 3), rgb(255, 255, 82));
+}
+
+path:hover {
+    fill: rgb(2, 26, 83);
+}
+
+g {
+    position: absolute;
+    visibility: hidden;
+}
+
+#tooltip {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    color: rgb(2, 26, 83);
+    font-size: 20px;
+}
+
